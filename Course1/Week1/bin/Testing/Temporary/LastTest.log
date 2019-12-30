@@ -1,0 +1,18 @@
+Start testing: Dec 30 10:19 EST
+----------------------------------------------------------
+1/1 Testing: test_merge_sort
+1/1 Test: test_merge_sort
+Command: "/mnt/d/Advait/Handouts_and_assignments/Fall_2019_coursework/DSA/Course1/Week1/bin/test/test_merge_sort"
+Directory: /mnt/d/Advait/Handouts_and_assignments/Fall_2019_coursework/DSA/Course1/Week1/bin
+"test_merge_sort" start time: Dec 30 10:19 EST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"test_merge_sort" end time: Dec 30 10:19 EST
+"test_merge_sort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 30 10:19 EST
