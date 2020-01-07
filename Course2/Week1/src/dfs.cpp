@@ -1,42 +1,42 @@
-#ifndef BFS_H
-#define BFS_H
+#ifndef DFS_H
+#define DFS_H
 #include "graph.h"
 #include<bits/stdc++.h>
 
-using namespace std;
-
-// perform bfs from src on graph
-vector<datatype> bfs(datatype src, Graph *graph)
+// perform dfs from src on graph
+vector<datatype> dfs(datatype src, Graph *graph)
 {
-  vector<datatype> bfs_traversal;
+  vector<datatype> dfs_traversal;
   // if no graph or src not in graph, return {}
-  if(!graph || !graph->nodes.count(src)) return bfs_traversal;
+  if(!graph || !graph->nodes.count(src)) return dfs_traversal;
   // make q and vis
-  queue<datatype> q;
+  stack<datatype> s;
   unordered_set<datatype> vis;
   // initialize q and vis
-  q.push(src);
+  s.push(src);
   vis.insert(src);
   // start bfs
-  while(!q.empty())
+  while(!s.empty())
   {
     // pop from queue
-    datatype node = q.front();
-    q.pop();
+    datatype node = s.top();
+    s.pop();
     // add to path
-    bfs_traversal.push_back(node);
+    dfs_traversal.push_back(node);
     // search neighbours of node
     for(datatype neigh : graph->edges[node])
     {
       // if unexplored neighbour, add to q
       if(!vis.count(neigh))
       {
-        q.push(neigh);
+        s.push(neigh);
         vis.insert(neigh);
       }
     }
   }
-  // return path of bfs_traversal
-  return bfs_traversal;
+  // return path of dfs_traversal
+  return dfs_traversal;
 }
+
+
 #endif

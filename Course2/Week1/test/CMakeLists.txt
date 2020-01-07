@@ -1,1 +1,5 @@
 add_executable (test_bfs test_bfs.cpp)
+add_executable (test_connected_comp test_connected_comp.cpp)
+add_executable (test_dfs test_dfs.cpp)
+add_executable (test_topological test_topological.cpp)
+add_executable (test_scc test_scc.cpp)
