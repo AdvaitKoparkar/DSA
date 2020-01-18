@@ -156,27 +156,37 @@ void test20()
   assert(check_equal(x,res) && "Test#6 multiply Failed");
 }
 
+void test21()
+{
+  vector<int> m1 = {1,4,3}, m2 = {1,1,8}, res = {1,6,8,7,4}, x;
+  x = karatsuba(m1, m2);
+  print_vector(x);
+  assert(check_equal(x,res) && "Test#7 multiply Failed");
+}
+
+
 int main()
 {
-  test1();
-  test2();
-  test3();
-  test4();
-  test5();
-  test6();
-  test7();
-  test8();
-  test9();
-  test10();
-  test11();
-  test12();
-  test13();
-  test14();
-  test15();
-  test16();
-  test17();
-  test18();
-  test19();
-  test20();
+  // test1();
+  // test2();
+  // test3();
+  // test4();
+  // test5();
+  // test6();
+  // test7();
+  // test8();
+  // test9();
+  // test10();
+  // test11();
+  // test12();
+  // test13();
+  // test14();
+  // test15();
+  // test16();
+  // test17();
+  // test18();
+  // test19();
+  // test20();
+  test21();
   return 0;
 }

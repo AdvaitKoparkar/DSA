@@ -166,14 +166,18 @@ vector<int> karatsuba(const vector<int> &m1c, const vector<int> &m2c)
   bd = karatsuba(b,d);
   t  = karatsuba(add(a,b),add(c,d));
   x = subtract(t, add(ac,bd));
-  cout << "---EXIT---\n";
-  print_vector(m1);
-  print_vector(m2);
-  print_vector(x);
-  cout << "----------\n";
   if(n%2) m = add(add(concat(ac,n),concat(x,n/2 + 1)),bd);
   else m = add(add(concat(ac,n),concat(x,n/2)),bd);
   remove_zeros(m);
+  cout << "---EXIT---\n";
+  print_vector(m1);
+  print_vector(m2);
+  print_vector(m);
+  print_vector(ac);
+  print_vector(bd);
+  print_vector(t);
+  print_vector(x);
+  cout << "----------\n";
   return m;
 }
 
