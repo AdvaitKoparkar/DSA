@@ -1,0 +1,18 @@
+Start testing: Jan 27 22:33 EST
+----------------------------------------------------------
+1/1 Testing: test_dijkstra
+1/1 Test: test_dijkstra
+Command: "/mnt/d/Advait/Handouts_and_assignments/Fall_2019_coursework/DSA/Course2/Week2/bin/test/test_dijkstra"
+Directory: /mnt/d/Advait/Handouts_and_assignments/Fall_2019_coursework/DSA/Course2/Week2/bin
+"test_dijkstra" start time: Jan 27 22:33 EST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_dijkstra" end time: Jan 27 22:33 EST
+"test_dijkstra" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 27 22:33 EST

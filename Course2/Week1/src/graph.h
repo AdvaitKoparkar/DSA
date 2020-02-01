@@ -19,8 +19,11 @@ class Graph
 public:
   size_t n_nodes, n_edges;
   bool directed;
+  datatype null_node;
   unordered_map<datatype, Node*> nodes;
   unordered_map<datatype, unordered_set<datatype>> edges;
+
+  Graph() : null_node(numeric_limits<datatype>::infinity()) {}
 
   // returns transpose of directed graph
   Graph* transpose()
@@ -87,13 +90,9 @@ Graph* read_graph(string filename, bool directed=false)
   return graph;
 }
 
-
-class WeightedGraph
+class WeightedGraph : public Graph
 {
 public:
-  size_t n_nodes, n_edges;
-  bool directed;
-  unordered_map<datatype, Node*> nodes;
   unordered_map<datatype, unordered_map<datatype, weighttype>> edges;
 };
 

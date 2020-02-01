@@ -7,3 +7,4 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/test)
 
 enable_testing()
 add_test(NAME test_heap COMMAND test_heap)
+add_test(NAME test_tree COMMAND test_tree)
